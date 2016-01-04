@@ -1,5 +1,5 @@
 hi,
-You can use this scripts to init the network config
+You can use these scripts to init the network config
 for new installed server which is not config the network.
 
  1 net-init-bond.sh
