@@ -24,4 +24,4 @@ for new installed server which is not config the network.
     dmesg | grep NIC
 
 maybe I was wrong...
-good lock :)
+good luck :)
