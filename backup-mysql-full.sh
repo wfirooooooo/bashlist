@@ -24,7 +24,7 @@ echo "-- begin full back up mysql databases -- $date --" >> $logfile
 for db in $all_dbs
 do
   gzdumpfile=${db}_${date}.sql.gz
-  $mysqldumpcmd -h${host} -u${user} -p${passd} --master-data=2 --single-transaction --opt $db | gzip -9 > ${bakdir}/backup.0/${gzdumpfile} \
+  $mysqldumpcmd -h${host} -u${user} -p${passd} --opt $db | gzip -9 > ${bakdir}/backup.0/${gzdumpfile} \
   && echo "$db backup success!" >> $logfile \
   && rm -f ${bakdir}/backup.7/*
 done
